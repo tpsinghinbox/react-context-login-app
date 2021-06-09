@@ -1,0 +1,16 @@
+.login-demo-main {
+  padding-top: 5rem;
+}
+
+.router-demo-main {
+  margin-top: 7rem;
+  text-align: center;
+  /* background-color: #e0e9f5; */
+}
+
+h1,
+h2,
+h3,
+p {
+  color: #042b5f;
+}

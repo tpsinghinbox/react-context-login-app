@@ -1,0 +1,11 @@
+.header {
+  width: 100%;
+  height: 5rem;
+  background-color: #044599;
+  padding: 0 10%;
+}
+
+.router-demo-main {
+  margin-top: 7rem;
+  text-align: center;
+}
