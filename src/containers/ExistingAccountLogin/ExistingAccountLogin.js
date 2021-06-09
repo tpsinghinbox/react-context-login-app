@@ -53,7 +53,7 @@ const ExistingAccountLogin = () => {
     event.preventDefault();
     setIsLoading(true);
     fetch(
-      "https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyC8QsI1wePQo2spo1UIQo5vWTAwJEqT8SI",
+      "https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=",
       {
         method: "POST",
         body: JSON.stringify({

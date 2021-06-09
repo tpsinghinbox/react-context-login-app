@@ -30,20 +30,17 @@ const UserProfile = () => {
   const onSubmitHandler = (event) => {
     event.preventDefault();
     setIsLoading(true);
-    fetch(
-      "https://identitytoolkit.googleapis.com/v1/accounts:update?key=AIzaSyC8QsI1wePQo2spo1UIQo5vWTAwJEqT8SI",
-      {
-        method: "POST",
-        body: JSON.stringify({
-          idToken: ctx.token,
-          password: enteredPassword,
-          returnSecureToken: true,
-        }),
-        headers: {
-          "Content-Type": "application/json",
-        },
-      }
-    )
+    fetch("https://identitytoolkit.googleapis.com/v1/accounts:update?key=", {
+      method: "POST",
+      body: JSON.stringify({
+        idToken: ctx.token,
+        password: enteredPassword,
+        returnSecureToken: true,
+      }),
+      headers: {
+        "Content-Type": "application/json",
+      },
+    })
       .then((response) => {
         return response.json();
       })
